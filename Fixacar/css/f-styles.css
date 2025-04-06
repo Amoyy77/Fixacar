@@ -1,0 +1,44 @@
+/* Team member images */
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-role {
+    font-style: italic;
+    color: #820933; 
+}
+
+/* General text */
+h1, h2 {
+    color: #820933; 
+}
+
+.team-member h5 {
+    color: white; 
+}
+
+.team-member p {
+    color: #820933; 
+}
+
+/* Button Style */
+button[type="submit"] {
+    background-color: #233D4D; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+button[type="submit"]:hover {
+    background-color: #1A2A35; 
+}
