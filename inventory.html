@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inventory | FixaCar</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/i-styles.css" />
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+ <!-- Header -->
+ <header class="header">
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+          <a href="index.html">
+          <img src="images/FixaCar Logo 2.jpg" class="logo">
+          </a>
+          </div>
+          <div class="col-sm-8">
+          <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="services.html">Services</a>
+            <a href="aboutus.html">About Us</a>
+          </nav>
+          </div>
+        </div>
+    </div>
+</header>
+
+  <section class="center-content">
+    <h1>Vehicle Inventory</h1>
+    <p>We offer a wide range of high-end vehicles</p>
+    <p>Filter by vehicle type to find your perfect ride</p>
+  </section>
+
+  <!-- Creates a Filter -->
+  <div class="filter-buttons">
+    <button onclick="filterVehicles('all')">All</button>
+    <button onclick="filterVehicles('sedan')">Sedan</button>
+    <button onclick="filterVehicles('coupe')">Coupe</button>
+    <button onclick="filterVehicles('truck')">Truck</button>
+    <button onclick="filterVehicles('suv')">SUV</button>
+  </div>
+
+  <!-- Grid -->
+  <section class="product-grid">
+
+    <!-- Sedans -->
+    <div class="product sedan">
+      <img src="images/Audi RS7 Sedan.jpg" alt="Sedan Car" />
+      <h3>Audi RS7</h3>
+      <p>$100,000</p>
+      <a href="#" class="button">Order</a>
+    </div>
+    
+    <div class="product sedan">
+      <img src="images/Mercedes C300 Sedan.jpg" alt="Sedan Car" />
+      <h3>Mercedes Benz c300</h3>
+      <p>$100,000</p>
+      <a href="#" class="button">Order</a>
+    </div>
+    
+    <div class="product sedan">
+      <img src="images/M5 cs.jpg" alt="Sedan Car" />
+      <h3>BMW M5 CS</h3>
+      <p>$150,000</p>
+      <a href="#" class="button">Order</a>
+    </div>
+    
+    <div class="product sedan">
+      <img src="images/Honda City Sedan.jpg" alt="Sedan Car" />
+      <h3>Honda City</h3>
+      <p>$45,000</p>
+      <a href="#" class="button">Order</a>
+    </div>
+    
+    <div class="product sedan">
+      <img src="images/Lancer Evo X Sedan.jpg" alt="Sedan Car" />
+      <h3>Mitsubishi Lancer Evo X</h3>
+      <p>$50,000</p>
+      <a href="#" class="button">Order</a>
+    </div>
+    
+    <!-- Coupes -->
+    <div class="product coupe">
+      <img src="images/BMW M4 Comp Coupe.jpg" alt="Coupe Car" />
+      <h3>BMW M4 Competition</h3>
+      <p>$130,000</p>
+      <a href="#" class="button">Order</a>
+    </div>
+    
+    <div class="product coupe">
+      <img src="images/Toyota GR Supra.jpg" alt="Coupe Car" />
+      <h3>Toyota Supra</h3>
+      <p>$80,000</p>
+      <a href="#" class="button">Order</a>
+    </div>
+    
+    <div class="product coupe">
+      <img src="images/Ford Mustang GT.jpg" alt="Coupe Car" />
+      <h3>Ford Mustang GT</h3>
+      <p>$50,000</p>
+      <a href="#" class="button">Order</a>
+    </div>
+    
+    <div class="product coupe">
+      <img src="images/Corvette C8.jpg" alt="Coupe Car" />
+      <h3>Chevrolet Corvette C8</h3>
+      <p>$70,000</p>
+      <a href="#" class="button">Order</a>
+    </div>
+    
+    <div class="product coupe">
+      <img src="images/Proche GT3 RS.jpg" alt="Coupe Car" />
+      <h3>Porche 911 GT3 RS</h3>
+      <p>$46,000</p>
+      <a href="#" class="button">Order</a>
+    </div>
+
+    <!-- Trucks -->
+    <div class="product truck">
+      <img src="images/Ford f150.jpg" alt="Truck" />
+      <h3>Ford F-150</h3>
+      <p>$90,000</p>
+      <a href="#" class="button">Order</a>
+    </div>
+    
+    <div class="product truck">
+      <img src="images/Chevy Silverado.jpg" alt="Truck" />
+      <h3>Chevrolet Silverado</h3>
+      <p>$70,000</p>
+      <a href="#" class="button">Order</a>
+    </div>
+    
+    <div class="product truck">
+      <img src="images/Dodge Ram.jpg" alt="Truck" />
+      <h3>Dodge RAM 1500</h3>
+      <p>$80,000</p>
+      <a href="#" class="button">Order</a>
+    </div>
+
+    <!-- SUVs -->
+    <div class="product suv">
+      <img src="images/Mercedes gle.jpg" alt="SUV" />
+      <h3>Mercedes AMG GLE 63</h3>
+      <p>$180,000</p>
+      <a href="#" class="button">Order</a>
+    </div>
+    
+    <div class="product suv">
+      <img src="images/BMW x6m.jpg" alt="SUV" />
+      <h3>BMW X6M</h3>
+      <p>$170,000</p>
+      <a href="#" class="button">Order</a>
+    </div>
+    
+    <div class="product suv">
+      <img src="images/Lambo Urus.jpg" alt="SUV" />
+      <h3>Lamborghini Urus</h3>
+      <p>$200,000</p>
+      <a href="#" class="button">Order</a>
+    </div>
+    
+    <div class="product suv">
+      <img src="images/Durango SRT.jpg" alt="SUV" />
+      <h3>Dodge Durango SRT</h3>
+      <p>$80,000</p>
+      <a href="#" class="button">Order</a>
+    </div>
+
+
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container-fluid"> <!--Footer container-->
+    <div class="row">
+    <div class="col-sm-4 text-center ">
+        <img src="images/FixaCar Logo 2.jpg" height="125px"
+          alt="Logo Image">
+    </div>
+    <div class="col-sm-4">
+      <h4>Contact FixaCar</h4>
+       <p>7th Avenue Malick, Barataria.</p>
+       <p>1(868) 304-5729</p>
+       <p>fixacar@gmail.com</p>
+
+        <div class="row fbg2 text-center">
+        <div class="col-sm-12">
+          <p style= "color: #fff">&copy; 2025 by Amit Gangadeen. All Rights Reserved. FixaCar</p>
+        </div>
+        </div>    
+</div>
+</div>
+</div>
+</div>
+
+<!-- Pop up Message -->
+<div id="orderMessage" class="message">
+    <div class="message-content">
+      <h4>Order Successful!</h4>
+      <p>Your order has been placed successfully. Thank you for choosing FixaCar!</p>
+      <button id="closeMessageBtn" class="close-btn">Close</button>
+    </div>
+  </div>
+
+  <script>
+    // Show the message when an order is placed 
+    function showOrderPopup() {
+      const message = document.getElementById('orderMessage');
+      message.style.display = 'flex'; // Display the message
+    }
+  
+    // Close the message when the close button is clicked
+    document.getElementById('closeMessageBtn').addEventListener('click', function() {
+      const message = document.getElementById('orderMessage');
+      message.style.display = 'none'; 
+    });
+  
+    
+    const orderButtons = document.querySelectorAll('.product .button');
+    orderButtons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        showOrderPopup(); // Show the message
+      });
+    });
+  
+    // Filter vehicles based on type
+    function filterVehicles(type) {
+      const allProducts = document.querySelectorAll('.product');
+      allProducts.forEach(product => {
+        if (type === 'all' || product.classList.contains(type)) {
+          product.style.display = 'block'; // Show product
+        } else {
+          product.style.display = 'none'; // Hide product
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
