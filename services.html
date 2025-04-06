@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - FixaCar</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/s-styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+          <a href="index.html">
+          <img src="images/FixaCar Logo 2.jpg" class="logo">
+          </a>
+          </div>
+          <div class="col-sm-8">
+          <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="services.html">Services</a>
+            <a href="aboutus.html">About Us</a>
+          </nav>
+          </div>
+        </div>
+    </div>
+</header>
+
+  <section class="center-content">
+    <h1>Book a Service</h1>
+    <p>Select and schedule the service you need.</p>
+  </section>
+
+  <div class="container">
+    <form class="form-group">
+      <label for="serviceType">Select Service:</label>
+      
+      <!-- Service Options -->
+      <div id="serviceOptions">
+        <div class="service-option" onclick="selectService('tire')">
+          <img src="images/tire repair.jpg" alt="Tire Repair">
+          <p>Tire Repair</p>
+        </div>
+        <div class="service-option" onclick="selectService('oil')">
+          <img src="images/Oil change.jpg" alt="Oil Change">
+          <p>Oil Change</p>
+        </div>
+        <div class="service-option" onclick="selectService('brake')">
+          <img src="images/Brake service.jpg" alt="Brake Service">
+          <p>Brake Service</p>
+        </div>
+        <div class="service-option" onclick="selectService('transmission')">
+          <img src="images/Transmission service.jpg" alt="Transmission Service">
+          <p>Transmission</p>
+        </div>
+      </div>
+
+      <label for="serviceDate">Preferred Date:</label>
+      <input type="date" id="serviceDate" class="form-control">
+
+      <label for="customerName">Name:</label>
+      <input type="text" id="customerName" class="form-control">
+
+      <label for="contact">Contact Number:</label>
+      <input type="tel" id="contact" class="form-control">
+
+      <button type="button" class="button mt-3" onclick="submitService()">Book Now</button>
+    </form>
+  </div>
+
+  <script>
+    let selectedService = "";
+  
+    function selectService(service) {
+      selectedService = service;
+  
+      // Remove selected class from being highlighted
+      const options = document.querySelectorAll('.service-option');
+      options.forEach(option => {
+        option.classList.remove('selected');
+      });
+  
+      // Add new class and highlights it
+      const clickedOption = [...options].find(opt =>
+        opt.onclick.toString().includes(service)
+      );
+      if (clickedOption) {
+        clickedOption.classList.add('selected');
+      }
+  
+    }
+  
+    function submitService() {
+      const name = document.getElementById('customerName').value;
+      const contact = document.getElementById('contact').value;
+      const date = document.getElementById('serviceDate').value;
+  
+      if (!selectedService || !name || !contact || !date) {
+        alert('Please fill in all fields and select a service.');
+      } else {
+        alert(`Service booked for ${name} on ${date} for ${selectedService} service.`);
+      }
+    }
+  </script>
+
+<!-- Footer -->
+  <div class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4 text-center">
+          <img src="images/FixaCar Logo 2.jpg" height="125px">
+        </div>
+        <div class="col-sm-4">
+          <h4>Contact FixaCar</h4>
+          <p>7th Avenue Malick, Barataria.</p>
+          <p>1(868) 304-5729</p>
+          <p>fixacar@gmail.com</p>
+          <div class="row fbg2 text-center">
+            <div class="col-sm-12">
+              <p>&copy; 2025 by Amit Gangadeen. All Rights Reserved. FixaCar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
